@@ -2,7 +2,7 @@ import Home from './pages/home'
 
 const App = () => {
   return (
-    <div class='flex flex-col text-center min-h-full font-Exo2'>
+    <div className='flex flex-col text-center min-h-full font-Exo2'>
       <Home />
     </div>
   )

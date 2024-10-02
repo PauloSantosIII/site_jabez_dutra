@@ -10,8 +10,17 @@ module.exports = {
         'exo-extraBold': ['Exo2-ExtraBold', 'sans-serif']
       },
       colors: {
-        primary: '#EABF13',
+        primary: '#EA7100',
         secondary: ''
+      },
+      animation: {
+        sliding: 'sliding 5s linear 1'
+      },
+      keyframes: {
+        sliding: {
+          '0%': { opacity: 0, 'margin-left': '-2000px' },
+          '100%': { opacity: 1, 'margin-left': '0px' }
+        }
       }
     },
   },

@@ -1,9 +1,9 @@
-import Page from "./components/page"
+import Main from "./areas/main"
 
 const Home = () => {
   return(
     <>
-      <Page />
+      <Main />
     </>
   )
 }

@@ -22,3 +22,29 @@
   font-style: normal;
   font-displat: swap
 }
+
+
+
+h1:after {
+  content: '';
+  background-color: black;
+  animation: cursor 0.5s infinite;
+}
+
+@keyframes cursor {
+  0% { opacity: 1; }
+  49% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+/* .subtitle {
+  animation-name: sliding;
+  animation-duration: 4s;
+  animation-delay: 4s;
+} */
+
+/* @keyframes sliding {
+  0% { margin-left: -2000px }
+  100% { margin-left: 0 }
+} */
