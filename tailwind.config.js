@@ -11,7 +11,7 @@ module.exports = {
       },
       colors: {
         primary: '#EA7100',
-        secondary: ''
+        secondary: '#172554'
       },
       animation: {
         sliding: 'sliding 5s linear 1'

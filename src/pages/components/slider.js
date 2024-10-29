@@ -1,4 +1,8 @@
 import Slider from "react-slick"
+import estrutura from '../../assets/works/Estrutura Metálica.jpeg'
+import fachada from '../../assets/works/Fachada Madeira.avif'
+import grade from '../../assets/works/Grade Janela.jpeg'
+import toldo from '../../assets/works/Toldo.jpeg'
 
 const SliderPromo = () => {
   const settings = {
@@ -10,29 +14,46 @@ const SliderPromo = () => {
     autoplay: true
   }
 
+  const works = [
+    {
+      image: estrutura,
+      color: 'yellow-300',
+      position: 'top-4',
+      title: 'ESTRUTURAS METÁLICAS'
+    },
+    {
+      image: fachada,
+      color: 'yellow-700',
+      position: 'bottom-1',
+      title: 'FACHADAS'
+    },
+    {
+      image: grade,
+      color: 'black',
+      position: 'top-2',
+      title: 'GRADES DE JANELA'
+    },
+    {
+      image: toldo ,
+      color: 'blue-400',
+      position: 'bottom-2',
+      title: 'TOLDOS'
+    }
+  ]
+
   return(
-  <div className="slider-container mt-4 w-11/12 mx-auto">
+  <div className="slider-container mt-4 w-10/12 lg:w-11/12 mx-auto">
     <Slider {...settings}>
-      <div className='bg-[url(https://picsum.photos/id/230/2000/500)] h-[500px]'>
-        <h3 className='absolute text-7xl top-7'>
-          SOLDAS
-        </h3>
-      </div>
-      <div className='bg-[url(https://picsum.photos/id/231/2000/500)] h-[500px]'>
-        <h3>2</h3>
-      </div>
-      {/* <div className='bg-[url(https://picsum.photos/id/232/2000/500)] h-[500px]'>
-        <h3>3</h3>
-      </div>
-      <div className='bg-[url(https://picsum.photos/id/233/2000/500)] h-[500px]'>
-        <h3>4</h3>
-      </div>
-      <div className='bg-[url(https://picsum.photos/id/234/2000/500)] h-[500px]'>
-        <h3>5</h3>
-      </div>
-      <div className='bg-[url(https://picsum.photos/id/235/2000/500)] h-[500px]'>
-        <h3>6</h3>
-      </div> */}
+      {works.map((work, index) => {
+        return(
+          <div key={index}>
+            <img src={work.image} alt={work.title} className='w-full h-[500px]' />
+            <h3 className={`absolute text-xl lg:text-7xl font-bold text-${work.color} ${work.position} shadow-lg`}>
+              {work.title}
+            </h3>
+          </div>
+        )
+      })}
     </Slider>
   </div>
   )
