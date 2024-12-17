@@ -22,3 +22,17 @@
   font-style: normal;
   font-displat: swap
 }
+
+@font-face {
+  font-family: 'Notable-Regular';
+  src: url('./fonts/Notable-Regular.ttf');
+  font-style: normal;
+  font-displat: swap
+}
+
+@font-face {
+  font-family: 'Britanic-Regular';
+  src: url('./fonts/Britanic.TTF');
+  font-style: normal;
+  font-displat: swap
+}

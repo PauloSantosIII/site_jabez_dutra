@@ -1,8 +1,8 @@
 import { useEffect } from 'react'
-import image from '../../assets/ImagePage.png'
+import image from '../../assets/logo.svg'
 import instagram from '../../assets/instagram.svg'
 import whatsapp from '../../assets/whatsapp.svg'
-import { ButtonContact } from '../components/buttonContact'
+import { ButtonContact } from '../components/buttons'
 
 const Main = () => {
   useEffect(() => {
@@ -28,12 +28,12 @@ const Main = () => {
     <section className='w-screen h-screen border-2 border-red bg-gradient-to-b from-primary from-55% to-slate-200 flex flex-col lg:flex-row'>
       <div className='lg:w-1/2 lg:max-w-1/2 lg:h-100 px-5 lg:pl-10'>
         <div className='h-[190px] lg:h-[210px]'>
-          <h1 className='text-7xl leading-snug lg:text-left text-black font-exo-extraBold font-bold text-wrap mt-20' id='text'>
+          <h1 className='text-7xl leading-snug lg:text-left text-white font-exo-extraBold font-bold text-wrap mt-20' id='text'>
             Olá, eu sou <br/> Jabez Dutra
           </h1>
         </div>
 
-        <p className='text-3xl lg:text-4xl text-black lg:text-right mt-7 lg:-mt-5 font-exo animate-sliding'>
+        <p className='text-3xl lg:text-4xl text-white lg:text-right mt-7 lg:-mt-5 font-exo animate-sliding'>
           Projetista & Executor
         </p>
 
@@ -60,6 +60,14 @@ const Main = () => {
           alt='soldador'
           className='w-1/2 mx-auto mt-5 lg:mt-20'
         />
+
+        <p className='text-3xl lg:text-4xl text-white font-notable'>
+          CONDUTRA
+        </p>
+
+        <p className='text-base lg:text-xl text-yellow-500 uppercase'>
+          soluções em serviços <br></br> execução de projeto
+        </p>
       </div>
     </section>
   )
