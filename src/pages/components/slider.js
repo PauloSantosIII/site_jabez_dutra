@@ -11,7 +11,8 @@ const SliderPromo = () => {
     speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true
+    autoplay: true,
+    arrows: false
   }
 
   const works = [
@@ -47,7 +48,7 @@ const SliderPromo = () => {
       {works.map((work, index) => {
         return(
           <div key={index}>
-            <img src={work.image} alt={work.title} className='w-full h-[500px]' />
+            <img src={work.image} alt={work.title} className='w-full h-[700px]' />
             <h3 className={`absolute text-xl lg:text-7xl font-bold text-${work.color} ${work.position} shadow-lg`}>
               {work.title}
             </h3>

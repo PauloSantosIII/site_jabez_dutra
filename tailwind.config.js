@@ -7,10 +7,12 @@ module.exports = {
         spicy: ['SpicyRice', 'sans-serif'],
         exo: ['Exo2-Regular', 'sans-serif'],
         'exo-bold': ['Exo2-Bold', 'sans-serif'],
-        'exo-extraBold': ['Exo2-ExtraBold', 'sans-serif']
+        'exo-extraBold': ['Exo2-ExtraBold', 'sans-serif'],
+        britanic: ['BRITANIC', 'sans-serif'],
+        notable: ['Notable-Regular', 'sans-serif']
       },
       colors: {
-        primary: '#EA7100',
+        primary: '#995348',
         secondary: '#172554'
       },
       animation: {
