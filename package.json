@@ -44,6 +44,5 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "tailwindcss": "^3.4.7"
-  },
-  "homepage": "https://github.com/PauloSantosIII/site_jabez_dutra/"
+  }
 }
