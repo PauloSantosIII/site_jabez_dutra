@@ -1,51 +1,53 @@
-import instagram from '../../assets/instagram.svg'
-import whatsapp from '../../assets/whatsapp.svg'
+import { FaInstagram, FaWhatsapp } from 'react-icons/fa'
 import { ButtonFooter } from '../components/buttons'
 
 const Footer = () => {
   return(
-  <div className="slider-container flex flex-col bg-slate-800 w-screen h-full font-exo">
-    <div className='flex'>
-      <div className='w-4/12 mx-auto pt-28 pb-5 text-left'>
-        <h3 className='text-white text-6xl'>
-          Jabez Dutra
-        </h3>
-        <h6 className='flex justify-between items-center mt-5 text-white w-full text-xl bg-gradient-to-r from-slate-800 from-35% to-white'>
-          Projetista & Executor
-        
-        
-          <div className='flex'>
-            <ButtonFooter
-              label='@jabez_dutra'
-              href='https://www.instagram.com/jabez_dutra/'
-              src={instagram}
-              alt='Logo Instagram'
-              className='text-white'
-            />
+  <div className="bg-slate-800 font-exo">
+    <div className='container mx-auto'>
+      <div className='flex'>
+        <div className='w-5/12 mx-auto pb-5 text-left'>
+          <h3 className='text-white text-6xl'>
+            Jabez Dutra
+          </h3>
+          <h6 className='flex justify-between items-center mt-5 text-white w-full text-xl bg-gradient-to-r from-slate-800 from-35% to-white'>
+            Projetista & Executor
+          
+          
+            <div className='flex'>
+              <ButtonFooter
+                href='https://www.instagram.com/jabez_dutra/'
+                icon={<FaInstagram />}
+                className='text-slate-800'
+              />
 
-            <ButtonFooter
-              label='orçamento'
-              href='https://wa.link/7xj7v5'
-              src={whatsapp}
-              alt='Logo WhatsApp'
-              className='text-white'
-            />
-          </div>
-        </h6>
+              <ButtonFooter
+                href='https://wa.link/7xj7v5'
+                icon={<FaWhatsapp />}
+                className='text-slate-800'
+              />
+            </div>
+          </h6>
 
-        <h6 className='flex justify-between items-center mt-5 text-white w-full text-xl'>
-          Quitandinha & Região <br/>
-          (41) 9 9677-8613
-        </h6>
-      </div>
+          <h6 className='flex justify-between items-center mt-5 text-white w-full text-xl'>
+            Curitiba & Região Metropolitana <br/>
+            (41) 9 9677-8613
+          </h6>
+        </div>
 
-      <div className='w-4/12 mx-auto pt-28 pb-5 text-left'>
-      
+        <div className='w-5/12 mx-auto pb-5 my-auto'>
+          <p className='flex justify-between items-center mt-5 text-center text-white w-full text-lg'>
+            "Tudo o que fizerem, façam de todo o coração, como para o Senhor, e não para os homens."  <br/>
+            Colossenses 3:23-24
+          </p>
+        </div>
       </div>
     </div>
 
-    <div className='w-screen mx-auto py-1 bg-slate-200 text-slate-800'>
-      <p>Site desenvolvido por paulosantosiii ®</p>
+    <div className='w-screen mx-auto text-base py-1 bg-slate-200 text-slate-800'>
+      <a href='https://wa.link/fqsbil' target='_blank' rel='noreferrer'>
+        <p>Site desenvolvido por paulosantosiii ®</p>
+      </a>
     </div>
   </div>
   )

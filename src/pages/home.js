@@ -46,7 +46,7 @@ const Home = () => {
 
 
   return(
-    <main className='w-screen h-full'>
+    <main className=' overflow-hidden'>
       <Main />
       <About />
       <Works />
