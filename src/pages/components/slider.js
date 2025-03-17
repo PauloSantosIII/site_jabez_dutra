@@ -130,11 +130,11 @@ const SliderPromo = ({ openModal, setOpenModal }) => {
               className='object-cover w-full h-[700px] rounded-xl'
               fill
             />
-            <h3 className={`absolute text-xl lg:text-7xl font-bold ${work.color} ${work.position} shadow-2xl m-5`}>
+            <h3 className={`absolute text-2xl md:text-4xl lg:text-7xl font-bold ${work.color} ${work.position} shadow-2xl m-5`}>
               {work.title}
             </h3>
 
-            <div className='absolute right-3 top-0 w-60 h-full py-3 grid grid-rows-4 gap-4 bg-black/50'>
+            <div className='hidden absolute right-3 top-0 w-60 h-full py-3 md:grid md:grid-rows-4 gap-4 bg-black/50'>
               {work.images.map((image, index) => (
                 <img
                   key={index}

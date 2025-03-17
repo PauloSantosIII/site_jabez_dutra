@@ -29,12 +29,12 @@ const Main = () => {
         
         <div className=''>
           <div className='h-[190px] lg:h-[210px]'>
-            <h1 className='text-7xl leading-snug lg:text-left text-white font-exo-extraBold font-bold text-wrap mt-20' id='text'>
+            <h1 className='text-6xl md:text-7xl leading-snug lg:text-left text-white font-exo-extraBold font-bold text-wrap mt-20' id='text'>
               Olá! Sou <br/> Jabez Dutra
             </h1>
           </div>
 
-          <p className='text-3xl lg:text-4xl text-white lg:text-right mt-7 lg:-mt-5 lg:-mr-12 font-exo animate-sliding'>
+          <p className='text-3xl lg:text-4xl text-white lg:text-right -mt-2 md:mt-7 lg:-mt-5 lg:-mr-12 font-exo animate-sliding'>
             Projetista & Executor
           </p>
 

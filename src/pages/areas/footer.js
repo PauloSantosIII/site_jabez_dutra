@@ -5,8 +5,8 @@ const Footer = () => {
   return(
   <div className="bg-slate-800 font-exo">
     <div className='container mx-auto'>
-      <div className='flex'>
-        <div className='w-5/12 mx-auto pb-5 text-left'>
+      <div className='flex flex-col md:flex-row pb-5'>
+        <div className='w-11/12 md:w-5/12 mx-auto py-5 md:pb-5 text-left border-y md:border-y-0'>
           <h3 className='text-white text-6xl'>
             Jabez Dutra
           </h3>
@@ -35,7 +35,7 @@ const Footer = () => {
           </h6>
         </div>
 
-        <div className='w-5/12 mx-auto pb-5 my-auto'>
+        <div className='w-11/12 md:w-5/12 mx-auto pb-5 my-auto'>
           <p className='flex justify-between items-center mt-5 text-center text-white w-full text-lg'>
             "Tudo o que fizerem, façam de todo o coração, como para o Senhor, e não para os homens."  <br/>
             Colossenses 3:23-24
