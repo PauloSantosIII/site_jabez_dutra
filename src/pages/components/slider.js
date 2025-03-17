@@ -42,7 +42,7 @@ import portao4 from '../../assets/works/portoes/IMG-20250206-WA0030.jpg'
 const SliderPromo = ({ openModal, setOpenModal }) => {
   
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 2000,
     slidesToShow: 1,

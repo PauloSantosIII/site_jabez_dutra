@@ -45,7 +45,7 @@ const Footer = () => {
     </div>
 
     <div className='w-screen mx-auto text-base py-1 bg-slate-200 text-slate-800'>
-      <a href='https://wa.link/fqsbil' target='_blank' rel='noreferrer'>
+      <a href='https://wa.link/ijzmjk' target='_blank' rel='noreferrer'>
         <p>Site desenvolvido por paulosantosiii ®</p>
       </a>
     </div>
